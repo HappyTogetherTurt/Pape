@@ -1,0 +1,42 @@
+﻿<Window x:Class="Pape.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pape"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400"
+    xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
+
+    <Grid x:Name="Grid">
+        <ComboBox x:Name="LevelBox" HorizontalAlignment="Left" Margin="42,71,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="LevelBox_SelectionChanged">
+            <ComboBoxItem Content="IGCSE"/>
+            <ComboBoxItem Content="AS and A Level"/>
+        </ComboBox>
+        <ComboBox x:Name="SubjectBox" HorizontalAlignment="Left" Margin="42,140,0,0" VerticalAlignment="Top" Width="219"/>
+        <Label Content="Level:" HorizontalAlignment="Left" Margin="39,48,0,0" VerticalAlignment="Top" Width="46" Height="26"/>
+        <Label Content="Subject:" HorizontalAlignment="Left" Margin="39,117,0,0" VerticalAlignment="Top" Height="23"/>
+        <Slider x:Name="YearSlider" HorizontalAlignment="Left" Margin="42,232,0,0" VerticalAlignment="Top" Width="219" TickPlacement="TopLeft" Minimum="2" Maximum="20" IsSnapToTickEnabled="True" Value="20" ValueChanged="YearSlider_ValueChanged"/>
+        <Button x:Name="DownloadButton" Content="Download" HorizontalAlignment="Left" Margin="39,533,0,0" VerticalAlignment="Top" Height="29" Width="90"/>
+        <Label Content="Year:" HorizontalAlignment="Left" Margin="39,218,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="SessionBox" HorizontalAlignment="Left" Margin="312,235,0,0" VerticalAlignment="Top" Width="39"/>
+        <local:SpinBox x:Name="PaperBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="42,346,0,0"/>
+        <Label Content="Paper:" HorizontalAlignment="Left" Margin="37,324,0,0" VerticalAlignment="Top"/>
+        <Label Content="Variant:" HorizontalAlignment="Left" Margin="126,325,0,0" VerticalAlignment="Top"/>
+        <local:SpinBox x:Name="VariantBox" HorizontalAlignment="Left" Margin="133,347,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="NoVariantBox" Content="No Variant" HorizontalAlignment="Left" Margin="180,350,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DirBox" HorizontalAlignment="Left" Margin="37,470,0,0" Text="Downloads" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" MaxLines="1"/>
+        <CheckBox x:Name="QpBox" Content="Question Paper" HorizontalAlignment="Left" Margin="266,336,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="MsBox" Content="Mark Scheme" HorizontalAlignment="Left" Margin="266,356,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="GtBox" Content="Grade Threshold" HorizontalAlignment="Left" Margin="266,376,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="OtherBox" Content="Other" HorizontalAlignment="Left" Margin="266,396,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TypeBox" HorizontalAlignment="Left" Margin="281,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" IsEnabled="False" MaxLines="1"/>
+        <TextBox x:Name="ExtBox" HorizontalAlignment="Left" Margin="281,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" IsEnabled="False" MaxLines="1"/>
+        <Label Content="Type" HorizontalAlignment="Left" Margin="309,411,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label Content="File Extension" HorizontalAlignment="Left" Margin="312,435,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="OpenBox" Content="Open once downloaded" HorizontalAlignment="Left" Margin="37,513,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="GceBox" Content="GceGuide" HorizontalAlignment="Left" Margin="44,28,0,0" VerticalAlignment="Top" Checked="Radio_Changed" IsChecked="True"/>
+        <RadioButton x:Name="XtremeBox" Content="XtremePapers" HorizontalAlignment="Left" Margin="180,28,0,0" VerticalAlignment="Top" Checked="Radio_Changed"/>
+        <Label x:Name="YearLabel" Content="20" HorizontalAlignment="Left" Margin="272,233,0,0" VerticalAlignment="Top" Width="23"/>
+    </Grid>
+</Window>

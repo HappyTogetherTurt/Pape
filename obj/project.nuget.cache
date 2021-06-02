@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZT4id9Kg30NPW/FAQbVz7cgE1kd6pfz4FUkGM/OCm2CepMkzAVAoktmehnlsOoRQFO09TCfthXe/wEcXS69vDQ==",
+  "success": true,
+  "projectFilePath": "D:\\Repos\\Pape\\Pape\\Pape.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jamie\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
